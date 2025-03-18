@@ -313,6 +313,16 @@ header.sticky{
 
 .service{
     text-align: center;
+    width: 100%;
+    height: 300px;
+
+    @media(max-width:900px){
+        height: 320px;
+    }
+
+    @media(max-width:800px){
+        height: 300px;
+    }
 }
 
 .service_1{
@@ -325,6 +335,16 @@ header.sticky{
     background: linear-gradient(0deg, #000066, rgba(0, 0, 0, 0.534));
     padding: 8%;
     color: #ffffff;
+    width: 100%;
+    height: 300px;
+
+    @media(max-width:900px){
+        height: 320px;
+    }
+
+    @media(max-width:800px){
+        height: 300px;
+    }
 }
 
 .hidden_head{
@@ -432,9 +452,15 @@ header.sticky{
     background-image: url(../assets/images/hero.jpg);
     background-position: center;
     background-size: cover;
+    width: 100%;
+    height: 250px;
 }
 
 .portfolio_hidden_content_1{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    align-items: center;
     cursor: pointer;
     background: linear-gradient(0deg, #000066, rgba(0, 0, 0, 0.534));
     transform: translateX(-30px);
@@ -446,6 +472,7 @@ header.sticky{
 
 .portfolio_hidden_head{
     font-weight: 600;
+    font-size: 20px;
 }
 
 .portfolio_1:hover .portfolio_hidden_content_1{
@@ -581,9 +608,17 @@ header.sticky{
 }
 
 /* FAQS */
+#faqs{
+    margin-bottom: 5%;
+}
+
 .faqs_big_container{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
+
+    @media(max-width:600px){
+        grid-template-columns: 1fr;
+    }
 }
 
 .faqs_left_container{
