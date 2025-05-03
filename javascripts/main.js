@@ -41,11 +41,13 @@ const services = [
 ];
 
 const backgrounds = [
-    "url('../assets/images/hero.jpg')",
+    "url('../assets/images/Corporate_Events Branding_&_Coordination.png')",
     "url('../assets/images/about-page.jpg')",
-    "url('../assets/images/hero.jpg')",
-    "url('../assets/images/img24.jpg')",
-    "url('../assets/images/hero.jpg')"
+    "url('../assets/images/services-2.jpg')",
+    "url('../assets/images/contact-us.jpg')",
+    "url('../assets/images/c4d.jpg')",
+    "url('../assets/images/clients-2.jpg')",
+    "url('../assets/images/photography-3.jpg')"
 ];
 
 let textIndex = 0;
@@ -79,7 +81,7 @@ function changeBackground() {
 
 // Start typing effect and background change
 typeText(services[textIndex]);
-setInterval(changeBackground, 5000);
+setInterval(changeBackground, 7000);
 
 
 // Portfolio

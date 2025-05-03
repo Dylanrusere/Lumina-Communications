@@ -372,7 +372,7 @@ header.sticky{
 }
 
 .portfolio_1{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/Corporate_Events\ Branding_&_Visibility.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -405,7 +405,7 @@ header.sticky{
 }
 
 .portfolio_2{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/Corporate_Events\ Branding_&_Coordination.PNG);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -459,7 +459,7 @@ header.sticky{
 }
 
 .portfolio_4{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/Exhibition_Stand\ Designs_&_Contruction.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -486,7 +486,7 @@ header.sticky{
 }
 
 .portfolio_5{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/c4d.jpg);
     background-position: center;
     background-size: cover;
     width: 100%;
@@ -558,9 +558,9 @@ header.sticky{
 	align-items: center;
 }
 .test-card-body .quote i{
-	font-size: 45px;
+	font-size: 30px;
 	color: var(--heading-clr);
-	margin-right: 20px;
+	margin-right: 10px;
 }
 .test-card-body .quote h2{
 	color: var(--heading-clr);
@@ -1043,7 +1043,7 @@ footer{
 }
 
 .first_image_about{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/services.jpg);
     background-position: right;
     background-size: cover;
 }
@@ -1089,7 +1089,6 @@ footer{
 
 /* Our Journey */
 #our_journey{
-    background-color: #ebeef7;
     padding: 5% 0;
 
     @media(max-width:800px){
@@ -1124,12 +1123,12 @@ footer{
 
 /* Mission, Vision & Values */
 #mission{
-    background-image: url(../assets/images/hero.jpg);
+    background-image: url(../assets/images/covered.png);
     background-attachment: fixed;
 }
 
 .the_container{
-    background-color: rgba(0, 0, 0, 0.596);
+    background-color: rgba(0, 0, 0, 0.432);
     padding: 3%;
     width: 80%;
 
@@ -1233,11 +1232,9 @@ footer{
 #call_to_action{
     width: 100%;
     height: 100%;
-    background-image: url(../assets/images/img24.jpg);
+    background-image: url(../assets/images/covered.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
-    margin-top: 5%;
 }
 
 .call_to_action_overall_container{
@@ -1284,7 +1281,7 @@ footer{
 #services_hero_section{
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/images/about-page.jpg);
+    background-image: url(../assets/images/services-2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1366,7 +1363,7 @@ footer{
 #portfolio_hero_section{
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/images/about-page.jpg);
+    background-image: url(../assets/images/Corporate_Events\ Branding_&_Visibility.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1433,14 +1430,14 @@ footer{
 
     .img_1{
         height: 450px;
-        background-image: url(../assets/images/hero.jpg);
+        background-image: url(../assets/images/Corporate_Events\ Branding_&_Visibility.jpg);
         background-position: center;
         background-size: cover;
     }
 
     .img_2{
         height: 450px;
-        background-image: url(../assets/images/branding.png);
+        background-image: url(../assets/images/Exhibition_Stand_Designs\ &_Construction.PNG);
         background-position: center;
         background-size: cover;
 
@@ -1451,22 +1448,11 @@ footer{
 
     .img_3{
         height: 450px;
-        background-image: url(../assets/images/hero.jpg);
+        background-image: url(../assets/images/photography.jpg);
         background-position: center;
         background-size: cover;
 
         @media(max-width:1100px){
-            display: none;
-        }
-    }
-
-    .img_4{
-        height: 450px;
-        background-image: url(../assets/images/img24.jpg);
-        background-position: center;
-        background-size: cover;
-
-        @media(max-width:1300px){
             display: none;
         }
     }
@@ -1615,7 +1601,7 @@ footer{
 #testimonials_hero_section{
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/images/about-page.jpg);
+    background-image: url(../assets/images/clients-2.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1630,17 +1616,21 @@ footer{
 .grid_container_testimonials{
     display: grid;
     grid-template-columns: 1fr 1fr;
-    margin: 10% 0 10% 0;
+    margin: 10% 0 20% 0;
     gap: 5%;
+
+    @media(max-width: 800px){
+        margin: 10% 0 30% 0;
+    }
 
     @media(max-width: 700px){
         grid-template-columns: 1fr;
         gap: 1%;
-        margin: 10% 0 20% 0;
+        margin: 10% 0 35% 0;
     }
 
     @media(max-width: 500px){
-        margin: 10% 0 30% 0;
+        margin: 10% 0 40% 0;
     }
 }
 
@@ -1698,13 +1688,11 @@ footer{
     }
 }
 
-
-
 /* ----------------------------- Contact Us Page-------------------------- */
 #contact_hero_section{
     width: 100%;
     height: 60vh;
-    background-image: url(../assets/images/about-page.jpg);
+    background-image: url(../assets/images/contact-us.jpg);
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
@@ -1760,4 +1748,8 @@ footer{
     @media(max-width:640px){
         display: block;
     }
+}
+
+#contact_section_testimonials{
+    margin-top: 0%;
 }
