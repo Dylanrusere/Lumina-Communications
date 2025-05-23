@@ -68,40 +68,86 @@
      </section>
        
      <!-- Contact -->
-     <section id="contact_section">
-          <div class="overall_contact_container">
-                    <div class="contact_head_container">
-                        <p class="contact_get" data-aos="fade-right" data-aos-duration="1000">Get In Touch</p>
-                        <p class="contact_brief" data-aos="fade-right" data-aos-duration="2000">With our expanded service portfolio, Lumina Communications Pvt Ltd remains committed to
-                            delivering innovative, high-impact communication and design solutions that drive success. <br> Get in Touch With Us Today!</p>
-                    </div>
-                <div class="big_contact_container big_contact_container_contact_page">
-                    <div class="contact_container">
-                        <div class="contact_form">
-                            <p class="send_msg" data-aos="fade-right" data-aos-duration="1000">Send A Message</p>
+    <section id="contact_section">
+            <div class="overall_contact_container">
+                <div class="contact_head_container">
+                    <p class="contact_get" data-aos="fade-right" data-aos-duration="1000">Get In Touch</p>
+                    <p class="contact_brief" data-aos="fade-right" data-aos-duration="2000">With our expanded service portfolio, Lumina Communications Pvt Ltd remains committed to
+                        delivering innovative, high-impact communication and design solutions that drive success. <br> Get in Touch With Us Today!</p>
+                </div>
+            </div>
+            <div class="big_contact_container">
+                <div class="contact_container">
+                    <div class="contact_form">
+                        <p class="send_msg" data-aos="fade-right" data-aos-duration="1000">Send A Message</p>
+                        <form id="contact-form">
                             <div class="first_form">
-                                <input type="text" name="name" placeholder="Full Name" id="name" required data-aos="slide-up" data-aos-duration="2000">
-                                <input type="email" name="email" placeholder="Email Address" required data-aos="slide-up" data-aos-duration="2500">
+                              <input 
+                                type="text" 
+                                name="name" 
+                                placeholder="Full Name" 
+                                required 
+                                data-aos="slide-up" 
+                                data-aos-duration="2000"
+                              >
+                              
+                              <input 
+                                type="email" 
+                                name="email" 
+                                placeholder="Email Address" 
+                                required 
+                                data-aos="slide-up" 
+                                data-aos-duration="2500"
+                              >
                             </div>
+                          
                             <div class="second_form">
-                                <input type="number" name="number" placeholder="Mobile Number" id="number" required data-aos="slide-up" data-aos-duration="3000">
-                                <input type="email" name="email" placeholder="Subject" required data-aos="slide-up" data-aos-duration="2500">
+                              <input 
+                                type="number" 
+                                name="number" 
+                                placeholder="Mobile Number" 
+                                required 
+                                data-aos="slide-up" 
+                                data-aos-duration="3000"
+                              >
+                              
+                              <input 
+                                type="text" 
+                                name="subject" 
+                                placeholder="Subject" 
+                                required 
+                                data-aos="slide-up" 
+                                data-aos-duration="2500"
+                              >
                             </div>
-                            
-                            <textarea name="Message" name="message" placeholder="Message" id="message" rows="4" required data-aos="slide-up" data-aos-duration="3500"></textarea>
-                            <button type="submit">Send <i class="fa-solid fa-paper-plane"></i></button>
-                        </div>
-                        <div class="contact_details">
-                            <div class="contact_info_head">Contact Information</div>
-                            <p class="location" data-aos="slide-up" data-aos-duration="1000"><i class="fa-solid fa-location-dot"></i> 123 Harare, Zimbabwe</p>
-                            <p class="phone_number" data-aos="slide-up" data-aos-duration="1500"><i class="fa-solid fa-phone"></i> +263 77 502 5928</p>
-                            <p class="email_address" data-aos="slide-up" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@luminacomms.co.zw">info@luminacomms.co.zw</a></p>
-                            <p class="worling_hours" data-aos="slide-up" data-aos-duration="2500"><i class="fa-solid fa-clock"></i> Mon - Fri: 0700hrs - 1730hrs <br>Sat & Sun: Closed</p>
-                        </div>
+                          
+                            <textarea 
+                              name="message" 
+                              placeholder="Message" 
+                              rows="4" 
+                              required 
+                              data-aos="slide-up" 
+                              data-aos-duration="3500"
+                            ></textarea>
+                          
+                            <button type="submit">
+                              Send <i class="fa-solid fa-paper-plane"></i>
+                            </button>
+                          
+                            <!-- Response Message -->
+                            <div id="form-response" style="display:none; margin-top: 20px;"></div>
+                        </form>
+                    </div>
+                    <div class="contact_details">
+                        <div class="contact_info_head">Contact Information</div>
+                        <p class="location" data-aos="slide-up" data-aos-duration="1000"><i class="fa-solid fa-location-dot"></i> 123 Harare, Zimbabwe</p>
+                        <p class="phone_number" data-aos="slide-up" data-aos-duration="1500"><i class="fa-solid fa-phone"></i> +263 77 502 5928</p>
+                        <p class="email_address" data-aos="slide-up" data-aos-duration="2000"><i class="fa-solid fa-envelope"></i> <a href="mailto:info@luminacomms.co.zw">info@luminacomms.co.zw</a></p>
+                        <p class="worling_hours" data-aos="slide-up" data-aos-duration="2500"><i class="fa-solid fa-clock"></i> Mon - Fri: 0700hrs - 1730hrs <br>Sat & Sun: Closed</p>
                     </div>
                 </div>
-        </div>
-     </section>
+            </div>
+    </section>
 
      <!-- Footer -->
      <footer>
@@ -154,5 +200,53 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
     <script src="./javascripts/testimonials.js"></script>
     <script src="./javascripts/main.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          document.getElementById('contact-form').addEventListener('submit', function(event) {
+            event.preventDefault();
+      
+            var form = event.target;
+            var formData = new FormData(form);
+            var responseDiv = document.getElementById('form-response');
+      
+            fetch('https://formspree.io/f/mwpojvkg', {
+              method: 'POST',
+              body: formData,
+              headers: {
+                'Accept': 'application/json'
+              }
+            })
+            .then(function(response) {
+              if (response.ok) {
+                responseDiv.style.display = 'block';
+                responseDiv.style.color = '#000066';
+                responseDiv.textContent = 'Thank you! Your submission has been received.';
+                form.reset();
+      
+                setTimeout(function() {
+                  responseDiv.style.display = 'none';
+                }, 10000);
+              } else {
+                responseDiv.style.display = 'block';
+                responseDiv.style.color = '#000066';
+                responseDiv.textContent = 'There was a problem with your submission. Please try again.';
+      
+                setTimeout(function() {
+                  responseDiv.style.display = 'none';
+                }, 10000);
+              }
+            })
+            .catch(function(error) {
+              responseDiv.style.display = 'block';
+              responseDiv.style.color = 'red';
+              responseDiv.textContent = 'There was a problem with your submission. Please try again.';
+      
+              setTimeout(function() {
+                responseDiv.style.display = 'none';
+              }, 10000);
+            });
+          });
+        });
+    </script>
 </body>
 </html>
